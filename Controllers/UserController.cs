@@ -79,7 +79,7 @@ namespace Shop.Controllers
 
         [HttpPost]
         [Route("")]
-        [Authorize(Roles = "manager")]
+        //[Authorize(Roles = "manager")]
         public async Task<ActionResult<User>> Post([FromServices] DataContext context, [FromBody] User model)
         {
             if (!ModelState.IsValid)
