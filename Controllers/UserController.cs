@@ -92,9 +92,8 @@ namespace Shop.Controllers
 
                 model.Role = "employee";
                 context.Users.Add(model);
-
-                model.Password = "";
                 await context.SaveChangesAsync();
+                model.Password = "";
                 return model;
             }
             catch (Exception)
